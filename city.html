@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>省市区三级联动</title>
+</head>
+<body>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ 2 　　<tr>
+ 3 　　　　<td>
+ 4 　　　　   <!-- 暂无 港澳台 如需要可在city.json文件中添加-->
+ 5 　　　　　　<select id="province" name="province" onchange="doProvAndCityRelation();">
+ 6 　　　　　　　　<option id="choosePro" value="-1">请选择您所在省份</option>
+ 7 　　　　　　</select>
+ 8 　　　　</td>
+ 9 　　</tr>
+10 　　<tr>
+11 　　　　<td>
+12 　　　　　　<select id="citys" name="city" onchange="doCityAndCountyRelation();">
+13 　　　　　　　　<option id='chooseCity' value='-1'>请选择您所在城市</option>
+14 　　　　　　</select>
+15 　　　　</td>
+16 　　</tr>
+17 　　<tr>
+18 　　　　<td>
+19 　　　　　　<select id="county" name="county">
+20 　　　　　　　　<option id='chooseCounty' value='-1'>请选择您所在区/县</option>
+21 　　　　　　</select>
+22 　　　　</td>
+23 　　</tr>
+24 </table>
+</body>
+</html>
